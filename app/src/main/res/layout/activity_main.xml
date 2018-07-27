@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="makepc.analisedesistema.com.makepc.MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_marginTop="77dp"
+        android:background="@drawable/logo2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <SeekBar
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:id="@+id/seekBarid"
+        android:indeterminate="false"
+        android:max="3300"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Quanto deseja gastar ?"
+        android:id="@+id/textView"
+        android:textSize="30dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="74dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/valordesejadoid"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="25dp"
+        android:layout_below="@+id/seekBarid"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="0" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Continuar"
+        android:id="@+id/continuarid"
+        android:layout_below="@+id/valordesejadoid"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="38dp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="R$"
+        android:id="@+id/textView12"
+        android:layout_alignBottom="@+id/valordesejadoid"
+        android:layout_toLeftOf="@+id/valordesejadoid"
+        android:layout_toStartOf="@+id/valordesejadoid"
+        android:layout_marginRight="21dp"
+        android:layout_marginEnd="21dp"
+        android:textColor="@color/colorPrimaryDark" />
+
+</RelativeLayout>
